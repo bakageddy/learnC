@@ -1,0 +1,17 @@
+The Original K&R Keywords used:
+* int
+* long
+* short
+* unsigned
+* char
+* float
+* double
+
+C90 K&R Keywords:
+* signed
+* void
+
+C99 Keywords:
+* _Bool
+* _Complex
+* _Imaginary
