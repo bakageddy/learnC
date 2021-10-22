@@ -6,6 +6,8 @@
 #define WIDTH 40
 
 
+// TODO: Make a damn project dude!
+
 void starbar(int width);
 int main(void) {
     starbar(WIDTH);
