@@ -2,19 +2,22 @@
 // I will do this tomorrow, it's already 1:39 AM
 
 #include <stdio.h>
-#include <math.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdlib.h>
 
-void printBase(char* number, int base, int count);
+void convertToAnyBase(int number, int base);
 int main(void) {
-    char* number = "10\0";
-    /* int number2 = atoi(number); */
-    printf("%c", number[1]);
-    printBase(number, 2, strlen(number));
+    int dinesh = 129;
+    convertToAnyBase(dinesh, 8);
     return 0;
 }
 
-void printBase(char* number, int base, int count) {
+void convertToAnyBase(int number, int base) {
+    if (base == 10) {
+        printf("%d", number);
+    } else {
+        while (number != 0) {
+            printf("%d", number % base);
+            number /= base;
+        }
+    }
+    return;
 }
